@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Security Scanner</h1>
+    </div>
+
+    <div class="container">
+        <div class="inputURL">
+            <input type="text" id="url" name="url" placeholder="https://www.example.com" required>
+            <button type="submit">SCAN URL</button>
+        </div>
+            
+        <div class="outputContainer">
+            <div class="outputHeader">
+                    <p>Compliance Status: <span id="Secure">Secure</span></p>
+                    <h2>Scan Summary</h2>
+                    <p>Compliance Score: 95/100</p>
+            </div>
+            <div class="output">
+                <div class="section cookies">
+                    <h3>Cookies</h3>
+                    <p>Cookies Detected:</p>
+                    <ul>
+                        <li>session_id: Essential</li>
+                        <li>tracking_id: Tracking</li>
+                    </ul>
+                    <p>Consent Status: <span class="status">Yes</span></p>
+                </div>
+            
+                <div class="section privacy-policy">
+                    <h3>Privacy Policy</h3>
+                    <p>Privacy Policy Found: <span class="status">Yes</span></p>
+                    <p>Key Points Covered:</p>
+                    <ul>
+                        <li>Data Collection</li>
+                        <li>User Rights</li>
+                        <li>Third-Party Sharing</li>
+                    </ul>
+                </div>
+            
+                <div class="section forms">
+                    <h3>Forms</h3>
+                    <p>Forms Found:</p>
+                    <ul>
+                        <li>/submit-form</li>
+                    </ul>
+                    <p>Secure Submission: <span class="status">Yes</span></p>
+                </div>
+            
+                <div class="section data-security">
+                    <h3>Data Transmission Security</h3>
+                    <p>HTTPS Used: <span class="status">Yes</span></p>
+                    <p>Mixed Content: <span class="status">None</span></p>
+                </div>
+            
+                <div class="section consent-mechanisms">
+                    <h3>Consent Mechanisms</h3>
+                    <p>Cookie Consent Banner: <span class="status">Present</span></p>
+                </div>
+            
+                <div class="section third-party-scripts">
+                    <h3>Third-Party Scripts</h3>
+                    <p>Scripts Found:</p>
+                    <ul>
+                        <li>Google Analytics: Analytics</li>
+                    </ul>
+                </div>
+            
+                <div class="section user-rights">
+                    <h3>User Rights</h3>
+                    <p>Access to Data: <span class="status">Yes</span></p>
+                    <p>Data Deletion: <span class="status">Yes</span></p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+</body>
+</html>
