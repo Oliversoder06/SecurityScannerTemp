@@ -111,7 +111,7 @@ body {
     font-weight: bold;
     color: #16A085;
     /* Teal for section titles */
-    border-bottom: 1px solid #BDC3C7;
+
     /* Light Gray border bottom */
     padding-bottom: 5px;
     margin-bottom: 10px;
@@ -159,4 +159,11 @@ body {
 .status.warning {
     color: #F39C12;
     /* Amber */
+}
+
+.sectionHeader {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #BDC3C7;
+    margin-bottom: 10px;
 }

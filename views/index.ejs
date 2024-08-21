@@ -14,28 +14,29 @@
     <div class="container">
         <div class="inputURL">
             <input type="text" id="url" name="url" placeholder="https://www.example.com" required>
-            <button type="submit">SCAN URL</button>
+            <button type="submit" id="scanBtn">SCAN URL</button>
         </div>
             
         <div class="outputContainer">
             <div class="outputHeader">
-                    <p>Compliance Status: <span id="Secure">Secure</span></p>
-                    <h2>Scan Summary</h2>
-                    <p>Compliance Score: 95/100</p>
+                <p>Compliance Status: <span id="Secure">Secure</span></p>
+                <h2>Scan Summary</h2>
+                <p id="complianceScore">Compliance Score: -/100</p>
             </div>
             <div class="output">
                 <div class="section cookies">
-                    <h3>Cookies</h3>
+                    <div class="sectionHeader">
+                        <h3>Cookies</h3>
+                    </div>
                     <p>Cookies Detected:</p>
-                    <ul>
-                        <li>session_id: Essential</li>
-                        <li>tracking_id: Tracking</li>
-                    </ul>
-                    <p>Consent Status: <span class="status">Yes</span></p>
+                    <ul id="cookiesList"></ul>
                 </div>
             
-                <div class="section privacy-policy">
-                    <h3>Privacy Policy</h3>
+                <!-- <div class="section privacy-policy">
+                    <div class="sectionHeader">
+                        <h3>Privacy Policy</h3>
+                        <p>Show More</p>
+                    </div>
                     <p>Privacy Policy Found: <span class="status">Yes</span></p>
                     <p>Key Points Covered:</p>
                     <ul>
@@ -46,7 +47,10 @@
                 </div>
             
                 <div class="section forms">
-                    <h3>Forms</h3>
+                    <div class="sectionHeader">
+                        <h3>Forms</h3>
+                        <p>Show More</p>
+                    </div>
                     <p>Forms Found:</p>
                     <ul>
                         <li>/submit-form</li>
@@ -55,18 +59,27 @@
                 </div>
             
                 <div class="section data-security">
-                    <h3>Data Transmission Security</h3>
+                    <div class="sectionHeader">
+                        <h3>Data Security</h3>
+                        <p>Show More</p>
+                    </div>
                     <p>HTTPS Used: <span class="status">Yes</span></p>
                     <p>Mixed Content: <span class="status">None</span></p>
                 </div>
             
                 <div class="section consent-mechanisms">
-                    <h3>Consent Mechanisms</h3>
+                    <div class="sectionHeader">
+                        <h3>Consent Mechanisms</h3>
+                        <p>Show More</p>
+                    </div>
                     <p>Cookie Consent Banner: <span class="status">Present</span></p>
                 </div>
             
                 <div class="section third-party-scripts">
-                    <h3>Third-Party Scripts</h3>
+                    <div class="sectionHeader">
+                        <h3>Third Party Scripts</h3>
+                        <p>Show More</p>
+                    </div>
                     <p>Scripts Found:</p>
                     <ul>
                         <li>Google Analytics: Analytics</li>
@@ -74,14 +87,18 @@
                 </div>
             
                 <div class="section user-rights">
-                    <h3>User Rights</h3>
+                    <div class="sectionHeader">
+                        <h3>User Rights</h3>
+                        <p>Show More</p>
+                    </div>
                     <p>Access to Data: <span class="status">Yes</span></p>
                     <p>Data Deletion: <span class="status">Yes</span></p>
-                </div>
+                </div> -->
             </div>
             
         </div>
     </div>
 
+    <script src="logic.js"></script>
 </body>
 </html>
